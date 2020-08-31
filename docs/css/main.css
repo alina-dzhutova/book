@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  background-color: #e2f1fc;
+  position: relative;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 967px;
+  padding-top: 60px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 55px 0px rgba(181, 220, 248, 1);
+  border-radius: 8px;
+}
+
+.card::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-img-wrapper {
+  float: left;
+}
+
+.card-content-wrapper {
+  padding-top: 12px;
+  float: right;
+  width: 426px;
+}
+
+.card-lable {
+  margin-bottom: 10px;
+  line-height: 1;
+
+  color: #bfc5c8;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-details-wrapper .card-lable {
+  margin-bottom: 8px;
+}
+
+.card-title {
+  margin-bottom: 23px;
+  line-height: 1.2;
+
+  color: #01a4bd;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.card-text {
+  margin-bottom: 17px;
+}
+
+.card-text p {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #6c757f;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-text p :last-child {
+  margin-bottom: 0;
+}
+
+.card-details-wrapper {
+  margin-bottom: 25px;
+}
+
+.card-price {
+  /*margin-top: 11px;*/
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+}
+
+.card-button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 37px;
+  padding-bottom: 13px;
+  border-radius: 4px;
+  background-color: #e2013b;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
